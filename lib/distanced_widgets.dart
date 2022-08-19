@@ -3,6 +3,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
+/// Places [top] on top and [bottom] on bottom.
+///
+/// If [top] takes more than [DistancedWidgets] itself then [bottom] is hide.
 class DistancedWidgets extends MultiChildRenderObjectWidget {
   DistancedWidgets({
     required Widget top,
@@ -12,7 +15,11 @@ class DistancedWidgets extends MultiChildRenderObjectWidget {
     Key? key,
   }) : super(children: [top, bottom], key: key);
 
+  /// Called after each [RenderObject.performLayout] when [bottom] is not
+  /// rendering
   final void Function() onBottomHide;
+
+  /// Called after each [RenderObject.performLayout] when [bottom] is rendering
   final void Function() onBottomShow;
 
   @override
