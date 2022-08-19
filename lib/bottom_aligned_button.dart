@@ -4,6 +4,10 @@ import 'package:flutter/material.dart';
 
 import 'distanced_widgets.dart';
 
+/// Places [child] on top of itself and [button] on bottom.
+///
+/// If [child] takes more height than [BottomAlignedButton] itself then [bottom]
+/// is moved to end of created list and becomes scrollable with child.
 class BottomAlignedButton extends StatefulWidget {
   const BottomAlignedButton({
     required this.button,
@@ -11,7 +15,9 @@ class BottomAlignedButton extends StatefulWidget {
     Key? key,
   }) : super(key: key);
 
+  /// Represents main content, for example login form.
   final Widget child;
+  /// The button that will be placed to bottom or at end of the list
   final Widget button;
 
   @override
