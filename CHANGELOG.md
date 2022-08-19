@@ -1,3 +1,3 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+BottomAlignedButton and DistancedWidgets are implemented.
