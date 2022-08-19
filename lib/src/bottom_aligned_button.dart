@@ -4,7 +4,7 @@ import 'distanced_widgets.dart';
 
 /// Places [child] on top of itself and [button] on bottom.
 ///
-/// If [child] takes more height than [BottomAlignedButton] itself then [bottom]
+/// If [child] takes more height than [BottomAlignedButton] itself then [button]
 /// is moved to end of created list and becomes scrollable with child.
 class BottomAlignedButton extends StatefulWidget {
   const BottomAlignedButton({
