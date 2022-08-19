@@ -1,6 +1,6 @@
 Provides `BottomAlignedButton` and `DistancedWidgets` widget that helps to place button (or any widget) at the bottom of the screen.
 
-![Example](assets/example.gif)
+![Example](https://user-images.githubusercontent.com/53380038/185696152-7ad4332c-b31a-40f2-b015-11c164210190.gif)
 
 ## Usage
 
