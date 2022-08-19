@@ -1,6 +1,6 @@
 name: bottom_aligned_button
 description: A Flutter package to place button at the bottom
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/mishkov/bottom_aligned_button
 
 environment:
