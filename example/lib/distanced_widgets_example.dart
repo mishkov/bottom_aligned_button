@@ -1,6 +1,5 @@
+import 'package:bottom_aligned_button/bottom_aligned_button.dart';
 import 'package:flutter/material.dart';
-
-import 'package:bottom_aligned_button/distanced_widgets.dart';
 
 void main() {
   runApp(const MyApp());
