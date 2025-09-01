@@ -10,6 +10,7 @@ class BottomAlignedButton extends StatefulWidget {
   const BottomAlignedButton({
     required this.button,
     required this.child,
+    this.keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual,
     Key? key,
   }) : super(key: key);
 
@@ -18,6 +19,8 @@ class BottomAlignedButton extends StatefulWidget {
 
   /// The button that will be placed to bottom or at end of the list
   final Widget button;
+
+  final ScrollViewKeyboardDismissBehavior keyboardDismissBehavior;
 
   @override
   State<BottomAlignedButton> createState() => _BottomAlignedButtonState();
@@ -33,6 +36,7 @@ class _BottomAlignedButtonState extends State<BottomAlignedButton> {
         physics: isButtonShowed ? const NeverScrollableScrollPhysics() : null,
         padding: EdgeInsets.zero,
         shrinkWrap: true,
+        keyboardDismissBehavior: widget.keyboardDismissBehavior,
         children: [
           widget.child,
           Visibility(
