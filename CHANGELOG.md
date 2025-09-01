@@ -1,3 +1,7 @@
+## 0.0.4
+
+Add ability to pass keyboardDismissBehavior to BottomAlignedButton
+
 ## 0.0.3
 
 Fix image link in documentation
